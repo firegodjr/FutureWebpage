@@ -1,66 +1,10 @@
-<!DOCTYPE html>
-<html lang="en-US">
+<!DOCTYPE html> 
+<html>
   <head>
-    <title> Age calculator </title>
-    <meta charset="utf-8" />
-    <style type="text/css">
-	body
-	{
-	 font-family: helvetica, verdana, arial;
-	}
-    </style>
+    <meta charset="UTF-8">
+    <title>Future</title>
+    <link rel="stylesheet" href="" type="text/css" />
   </head>
     <body>
-	  <form style="text-align:center;">
-	    <h2>I can tell you your age o_O</h2>
-		<p><label>1) Enter your birth month (1/12):</label>
-		<input type="number" id="bmon" size="2"/>;
-		<br />
-		<label>2) Enter your birth year:</label>
-		<input type="number" maxlength="4" id="byear"/>;
-		<br />
-		<input type="button" value="Get your age" onclick="calcAge()" /></p>
-		<label>3) Your age is:</label>
-		<input type="number" size="4" disabled="on" id="age" /> years old.
-	  <script>
-	    function calcAge()
-		{
-		/*
-	    Programmer: Trevor C. Sirles;
-	    (314) 578-0068;
-	    7405 Virginia Avenue;
-	    Date: December 10, 2016;
-	    Description: This will give the user their age.
-		*/
-		
-		//Declare variables
-		var d = new Date();
-                var y = d.getFullYear();
-		var m = (d.getMonth() + 1);
-		var month = document.getElementById('bmon').value;
-		var year = document.getElementById('byear').value;
-		var ages;
-		
-		if (month == "" || year == "" || month <= 0 || month > 12 || year <= 0 || year > y )
-		{
-		alert("Invalid month or year");
-		}
-		
-		//This will check to see if the users birthday hasn't passed in the current year
-		else if (m < month)
-	        {
-	        ages = y - year;
-		ages -= 1;
-		document.getElementById('age').value = ages;
-		}
-		
-	       else
-		{
-		ages = y - year;
-		document.getElementById('age').value = ages;
-		}
-		}
-	  </script>
-	  </form>
-	</body>
+    </body>
 </html>
