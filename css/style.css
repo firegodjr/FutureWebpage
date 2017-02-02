@@ -4,15 +4,37 @@ body
 }
 header
 {
+	padding: 10px;
 	background-color: white;
 	border-radius: 10px;
-	box-shadow: 2px 2px 10px black, 2px 2px 5px gray inset;
+	box-shadow: 2px 2px 10px black, -2px -2px 5px gray inset;
 }
 nav
 {
+	padding: 10px;
 	float: left;
 	width: 70px;
 	background-color: white;
 	border-radius: 10px;
-	box-shadow: 2px 2px 10px black, 2px 2px 5px gray inset;
+	box-shadow: 2px 2px 10px black, -2px -2px 5px gray inset;
+}
+nav ul
+{
+	padding: 2px;
+	list-style-type: none;
+	border-radius: 5px;
+	background-color: #67ab67; 
+	box-shadow: -2px -2px 5px #487748 inset;
+	-webkit-transition: background-color 0.5s;
+	
+}
+nav ul:hover
+{
+	background-color: #c2ddc2;
+	box-shadow: -2px -2px 5px #487748 inset;
+}
+nav ul:active
+{
+	background-color: #487748;
+	box-shadow: 2px 2px 5px #2B472B inset;
 }
