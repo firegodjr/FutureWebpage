@@ -1,23 +1,73 @@
 <!doctype html>
-<html>
+<html lang="en-US">
 <!--
-    author: firegodjr
+    author: firegodjr & TrevorSirles
     date: 2/2/2017
 -->
   <head>
-  <link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<meta charset="utf-8" />
+	<title>Future Medicine-Form</title>
   </head>
   <body>
+	<header>
+		<h1>Medicine of the future</h1>
+	</header>
+	 
     <nav>
-      <ul>
-          <a href="index.html"><li>Home</li></a>
-          <a href="index.html"><li>Growing Organs</li></a>
-          <a href="index.html"><li>Nanobots</li></a>
-          <a href="signup.html"><li>Sign Up</li></a>
-      </ul>
+	<h2>Links</h2>
+    <ul>
+        <a href="index.html"><li>Home</li></a>
+        <a href="index.html"><li>Growing Organs</li></a>
+        <a href="index.html"><li>Nanobots</li></a>
+        <a href="signup.html"><li>Sign Up</li></a>
+    </ul>
     </nav>
-    <form>
-      
+	
+	<article id="formArt">
+    <form name="delivery" method="post" action="trevorsirles@gmail.com">
+		<h2>Sign up for our specially made medicine</h2>
+		<label>First Name</label>
+		<input type="text" name="fname" size="18" autofocus pattern="[A-Za-z]{5,20}" required="required" class="inputs" />
+		<br /><br /> 
+		<label>Last name</label>
+		<input type="text" name="lname" size="19" pattern="[A-Za-z]{5,20}" required="required" class="inputs" />
+		<br /><br /> 
+		<label>Phone #</label>
+		<input type="text" name="phone" size="10" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required="required" class="inputs" />
+		<br /><br /> 
+		<label>City</label>
+		<input type="text" name="city" size="23"  pattern="[A-Za-z]{5,45}" required="required" class="inputs" />
+		<br /><br /> 
+		<label>State</label>
+		<input type="text" name="state" size="2" pattern="[A-Z]{2}" required="required" class="inputs" />
+		<br /><br /> 
+		<label>Zip Code</label>
+		<input type="text" name="zip" size="5" pattern="[0-9]{5}" required="required" class="inputs" />
+		<br /><br /> 
+		<label>Address</label>
+		<input type="text" name="add" size="21" pattern="[0-9]{4,8} [A-Za-z]{1,25}" required="required" class="inputs" />
+		<br /><br /> 
+		<label>E-mail Address</label>
+		<input type="email" name="email" required="required" class="inputs" />
+		<br /> <br /> 
+		<input type="submit" value="Send Form" class="buttons" />
+		<input type="reset" value="Clear Form" class="buttons" />
     </form>
+	</article>
+	
+	<aside>
+		<img src="pics/pills.jpg" alt="Red or Blue Pill?" width="525" height="325" />
+	</aside>
+	
+	<footer id="formFoot">
+	&copy; 2055 Copy of Rights. All Rights Reserved
+	<br />
+	Contact us at (314) 555-5555
+	<br />
+	or e-mail us at <a href="#">futureclinicID#1234@yahoo.org</a>
+	<br />
+	Date of publish: 5/27/2084
+	</footer>
   </body>
 </html>
