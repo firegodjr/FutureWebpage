@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en-US">
+<!--
+    author: firegodjr & TrevorSirles
+    date: 2/2-4/2017
+-->
+  <head>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<meta charset="utf-8" />
+	<title>Future Medicine-Form 2</title>
+  </head>
+  <body>
+  <section>
+	 <form name="donate" id="donate" method="post" action="trevorsirles@gmail.com">
+	 <h2>Make a donation today!</h2>
+	<label>First Name</label>
+	<input type="text" name="fname2" size="18" autofocus pattern="[A-Za-z]{5,20}"  class="inputs" />
+	<br /><br /> 
+	<label>Last name</label>
+	<input type="text" name="lname2" size="19" pattern="[A-Za-z]{5,20}" class="inputs" />
+	<br /><br />
+	<label>How much would you like to donate?</label>
+	<input type="text" name="donation" required="required" pattern="[$]{1}[0-9]{1,30}" class="inputs" />
+	<br /><br />
+	<label>What would you like to donate to?</label>
+	<select name="cause" class="inputs">
+	<option selected>- Select One -</option>
+	<option value="hair">Abnormal Hair Growth</option>
+	<option value="cancer1">Skin Cancer</option>
+	<option value="yee">Dis-Yeese</option>
+	<option value="nuro">Neurovirus</option>
+	<option value="scale">Reptillious Skinnus</option> 
+	</select>
+	<br /><br />
+	<label>E-mail Address</label>
+	<input type="email" name="email" class="inputs" />
+	<br /><br />
+	<label>How will you be paying?</label>
+	<br />
+	Credit Card <input type="radio" name="payment" value="credit" class="inputs" />
+	PayPal <input type="radio" name="payment" value="credit" class="inputs" />
+	Debit Card <input type="radio" name="payment" value="credit" class="inputs" />
+	Cash <input type="radio" name="payment" value="credit" class="inputs" />
+	<br />
+	<strong>**NOTE: If you are paying with paypal or credit, the money will be xtracted directly from your account.</strong> 
+	<br /><br />
+	<input type="submit" value="Send Form" class="buttons" />
+	<input type="reset" value="Clear Form" class="buttons" />
+    </form>
+	</section>
+  </body>
+ </html>
